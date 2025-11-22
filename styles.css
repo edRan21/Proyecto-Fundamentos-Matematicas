@@ -5,6 +5,7 @@ header {
     overflow: hidden;
 }
 
+
 .contenedor-logo{
 max-width: 10%;
 height: auto;
@@ -40,8 +41,6 @@ display: block;
     }
     .contenedor-logo{
         max-width: 80%;
-        height: auto;
-        display: block;
     }
     h1 {
         text-align:center;
@@ -88,4 +87,5 @@ body {
 .derechos-autor{
     text-align:center;
     font-size: 20px;
+    color: white;
 }
