@@ -1,20 +1,71 @@
+header {
+    max-width: 100%;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contenedor-logo{
+max-width: 10%;
+height: auto;
+display: block;
+}
+
+.logo{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    align-items: center;
+}
+
+
 h1 {
-    text-align: center;
+    text-align: right;
     font-family: monospace;
     font-size: 3rem;
+    position: relative;
+    top: -115px;
+
 }
+
+
+@media (max-width: 600px) { 
+    .menu{
+        border: 4px solid rgb(40, 40, 40);
+        border-radius: 5px;
+    }
+}
+
 
 .contenedor{
     display: flex;
-    background-color: darksalmon;
+    background-color: rgb(39, 37, 37);
 }
 
+
 .contenedor div{
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
+    background-color: rgb(39, 37, 37);
+    margin: 8px;
+    padding: 8px;
     font-size: 30px;
+    border-style: ridge;
 }
+
+
+a:link, a:visited {
+    color: white;
+    padding-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #564f4e;
+    display: inline-block;
+    border-left: 6px solid rgb(205, 89, 89);
+}
+
+a:hover, a:active {
+    background-color: rgb(205, 119, 119);
+}
+
 
 body {
     background-image:url("images/descarga.jpg")
@@ -22,8 +73,10 @@ body {
 
 
 footer{
-margin-top: 100%;
-margin-bottom: 50px;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    margin-top: 1%;
+    margin-bottom: 50px;
 }
 
 .derechos-autor{
