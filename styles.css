@@ -128,11 +128,11 @@ footer{
         font-size: 1rem;
     }
     .prof {
-        width: 15%;
-        height: 15%;
+        width: 25%;
+        height: 25%;
+        align-items: center;
     }
     .mate {
-        top: -200%;
         font-size: 70%;
     }
     footer {
