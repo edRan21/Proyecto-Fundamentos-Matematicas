@@ -162,10 +162,13 @@ footer{
         font-size: 80%;
         right: -2.5%;
     }
+    .introduccion {
+        font-size: 1rem;
+    }
     footer {
         padding-left: 5%;
         padding-right: 5%;
-        margin-top: 1%;
+        margin-top: 100%;
         margin-bottom: 50px;
     }
     .derechos-autor{
