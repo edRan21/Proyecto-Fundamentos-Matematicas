@@ -5,6 +5,7 @@ header {
     overflow: hidden;
 }
 
+
 h1 {
     text-align: center;
     font-family: monospace;
@@ -13,11 +14,13 @@ h1 {
     top: -115px;
 }
 
+
 .contenedor-logo{
 max-width: 10%;
 height: auto;
 display: block;
 }
+
 
 .logo{
     max-width: 100%;
@@ -25,6 +28,7 @@ display: block;
     display: block;
     align-items: center;
 }
+
 
 .contenedor {
     display: flex; 
@@ -45,6 +49,7 @@ display: block;
     font-size: 20px;
     color: white;
 }
+
 
 @media (max-width: 600px) { 
     header {
