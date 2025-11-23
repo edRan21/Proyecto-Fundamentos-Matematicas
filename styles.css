@@ -69,6 +69,7 @@ article {
 .portada {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 .prof {
@@ -127,8 +128,8 @@ footer{
         font-size: 1rem;
     }
     .prof {
-        width: 10%;
-        height: 10%;
+        width: 20%;
+        height: 20%;
     }
     .mate {
         font-size: 1rem;
