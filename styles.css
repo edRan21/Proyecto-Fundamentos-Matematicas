@@ -47,15 +47,23 @@ display: block;
 
 h2 {
     color: white;
-    font-size: 50px;
+    font-size: 2rem;
     text-align: center;
     position: relative;
     right: 25px;
+    top: -20px
 }
 
 span {
     position: relative;
     overflow: hidden;
+}
+
+article {
+    background-color: #635552;
+    border: 2px solid #635552;
+    border-radius: 10px;
+    padding: 10px;;
 }
 
 footer{
@@ -94,6 +102,7 @@ footer{
     }
     h2 {
         right: 0%;
+        top:0%
     }
     footer {
         padding-left: 5%;
