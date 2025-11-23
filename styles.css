@@ -207,6 +207,15 @@ footer{
     .derechos-autor{
         font-size: 1rem;
     }
+
+    /* Razonamiento */
+    .lado-derecho{
+        right: 0%;
+        top: 0%;
+    }
+    .lado-izquierdo {
+        left: 0%;
+    }
 }
 
 
