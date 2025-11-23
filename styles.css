@@ -132,9 +132,9 @@ footer{
         height: 20%;
     }
     .mate {
-        top: -280;
+        top: -180;
         font-size: 60%;
-        text-align: right;
+        right: 100%;
     }
     footer {
         padding-left: 5%;
