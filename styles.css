@@ -45,6 +45,19 @@ display: block;
     border-style: ridge;
 }
 
+h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    right: 25px;
+}
+
+span {
+    position: relative;
+    overflow: hidden;
+}
+
 footer{
     background-color: #564f4e;
     border: 2px solid #564f4e;
@@ -79,6 +92,9 @@ footer{
     .contenedor {
         flex-direction: column;
     }
+    h2 {
+        right: 0%;
+    }
     footer {
         padding-left: 5%;
         padding-right: 5%;
@@ -110,7 +126,3 @@ body {
     background-image:url("images/descarga.jpg")
 }
 
-
-h2 {
-    color: white;
-}
