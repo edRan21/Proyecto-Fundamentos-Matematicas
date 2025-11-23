@@ -1,240 +1,194 @@
-header {
-    max-width: 100%;
-    height: 170px;
-    position: relative;
-    overflow: hidden;
+/* --- ESTILOS GENERALES Y RESET --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background-image: url("images/descarga.jpg"); /* Asegurate que la ruta sea correcta desde index o ../ desde pages */
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #333; /* Fallback */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid rgb(205, 89, 89);
+}
+
+.contenedor-logo {
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
 
 h1 {
-    text-align: center;
+    display: inline-block;
     font-family: monospace;
-    font-size: 3rem;
-    position: relative;
-    top: -115px;
+    font-size: 2.5rem;
+    vertical-align: middle;
+    margin-left: 20px;
     color: white;
 }
 
-
-.contenedor-logo{
-max-width: 10%;
-height: auto;
-display: block;
+/* --- NAVEGACIÓN --- */
+.menu {
+    background-color: rgb(39, 37, 37);
+    position: sticky; /* Se pega arriba al hacer scroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
-
-
-.logo{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    align-items: center;
-}
-
 
 .contenedor {
-    display: flex; 
-    background-color: rgb(39, 37, 37);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
 }
 
+.contenedor div a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #564f4e;
+    color: white;
+    text-decoration: none;
+    border-left: 4px solid rgb(205, 89, 89);
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
 
-.contenedor div{
-    background-color: rgb(39, 37, 37);
-    margin: 8px;
-    padding: 8px;
-    font-size: 30px;
-    border-style: ridge;
+.contenedor div a:hover {
+    background-color: rgb(205, 119, 119);
+    transform: translateY(-2px);
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+article {
+    background-color: rgba(99, 85, 82, 0.95); /* Semi-transparente para leer bien */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+    width: 90%;
+    border: 1px solid #7a6e6c;
 }
 
 h2 {
-    color: white;
-    font-size: 2rem;
     text-align: center;
-    position: relative;
-    right: 25px;
-    top: -20px
-}
-
-span {
-    position: relative;
-    overflow: hidden;
-}
-
-.parte1 {
-    background-color: #635552;
-    border: 2px solid #635552;
-    border-radius: 10px;
-    padding: 10px;
-    position: relative;
-    top: 50px;
-}
-
-.parte2 {
-    background-color: #635552;
-    border: 2px solid #635552;
-    border-radius: 10px;
-    padding: 10px;  
-    position: relative;
-    top: 100px;
-}
-
-.parte3 {
-    background-color: #635552;
-    border: 2px solid #635552;
-    border-radius: 10px;
-    padding: 10px;  
-    position: relative;
-    top: 150px;
-}
-
-.portada {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-}
-
-.prof {
-    border: 2px solid rgb(205, 89, 89);
-    border-radius: 50%; 
-    width: 100px;
-    height: 100px;
-}
-
-.mate {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    top: -40px;
-}
-
-.subtitulo {
-    color: white;
-}
-
-.introduccion {
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-}
-
-li {
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-/* Razonamiento */
-
-.lado-izquierdo {
-    position: relative;
-    left: -20%;
-}
-
-.lado-derecho {
-    position: relative;
-    right: -20%;
-    top: -285px;
-}
-
-footer{
-    background-color: #564f4e;
-    border: 2px solid #564f4e;
-    border-radius: 10px; 
-    padding: 15px;
-    margin-top: 50%;
-
-}
-
-.derechos-autor{
-    text-align:center;
-    font-size: 20px;
-    color: white;
-}
-
-
-@media (max-width: 600px) { 
-    header {
-        height: auto;
-    }
-    .contenedor-logo {
-        max-width: 80%;
-    }
-    h1 {
-        top: 0%;
-    }
-    .menu{
-        border: 4px solid rgb(40, 40, 40);
-        border-radius: 5px;
-    }
-    .contenedor div{
-        font-size: 1rem;
-    }
-    .contenedor {
-        flex-direction: column;
-    }
-    h2 {
-        right: 0%;
-        top:0%
-    }
-    .trigonometricas {
-        font-size: 2rem;
-    }
-    .portada {
-        font-size: 1rem;
-    }
-    .prof {
-        width: 15%;
-        height: 30%;
-    }
-    .mate {
-        top: -10px;
-        font-size: 80%;
-        right: -2.5%;
-    }
-    .introduccion {
-        font-size: 1rem;
-    }
-    .parte3 {
-        top: 3rem;
-    }
-    li{
-        font-size: 1rem;
-    }
-    footer {
-        padding-left: 5%;
-        padding-right: 5%;
-        margin-top: 100%;
-        margin-bottom: 50px;
-    }
-    .derechos-autor{
-        font-size: 1rem;
-    }
-
-    /* Razonamiento */
-    .lado-derecho{
-        right: 0%;
-        top: 0%;
-    }
-    .lado-izquierdo {
-        left: 0%;
-    }
-}
-
-
-a:link, a:visited {
-    color: white;
-    padding-top: 5px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #564f4e;
+    margin-bottom: 20px;
+    color: #ffd700; /* Dorado para resaltar */
+    border-bottom: 2px solid #ffd700;
     display: inline-block;
-    border-left: 6px solid rgb(205, 89, 89);
+    padding-bottom: 5px;
 }
 
-a:hover, a:active {
-    background-color: rgb(205, 119, 119);
+/* --- SISTEMA DE COLUMNAS (GRID/FLEX) --- */
+.contenedor-tema {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
-
-body {
-    background-image:url("images/descarga.jpg")
+.columna-tema {
+    flex: 1 1 300px; /* Crece, se encoge, base 300px */
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
 }
 
+/* --- ELEMENTOS EDUCATIVOS --- */
+.nota-pro {
+    border-left: 5px solid rgb(205, 89, 89);
+    background-color: #2c2423;
+    padding: 15px;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.simbolo-matematico {
+    font-weight: bold;
+    color: #ffcc00;
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+    margin: 10px 0;
+}
+
+.imagen-tema {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+/* --- INTERACTIVIDAD JS --- */
+.zona-interactiva {
+    background: #333;
+    border: 2px dashed #ffd700;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.btn-interactivo {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: rgb(205, 89, 89);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-interactivo:hover {
+    background: rgb(255, 100, 100);
+}
+
+.resultado {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    min-height: 40px;
+    color: #00ff00;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    background-color: #2b2b2b;
+    padding: 20px;
+    margin-top: 50px;
+    color: #bbb;
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 768px) {
+    h1 { font-size: 1.5rem; display: block; margin: 10px 0; }
+    .contenedor { flex-direction: column; }
+    .contenedor div a { text-align: center; }
+    article { width: 95%; margin: 10px auto; }
+}

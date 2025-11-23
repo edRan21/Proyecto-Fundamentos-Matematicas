@@ -4,53 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css"> 
-    <link rel="script" href="../script.js">
-    <link rel="icon" type="images/x-icon" href="images/FIBONACCI.jpg">
-    <title> Fundamentos de las Matemáticas </title>
+    <script src="../script.js" defer></script>
+    <title>Axiomas y Números Reales</title>
 </head>
 <body>
     <header>
-        <div class="contenedor-logo"> 
-            <img class="logo" src="../images/FCC.png">
-        </div>
-        <h1> Axiomas de campo y números reales </h1>
+        <div class="contenedor-logo"><img class="logo" src="../images/FCC.png"></div>
+        <h1>Axiomas de Campo</h1>
     </header>
     
     <nav class="menu"> 
         <div class="contenedor">
-            <div>
-                <a href="/index.html"> Inicio </a>
-            </div>
-            <div> 
-                <a href="/pages/razonamiento.html"> Razonamiento Matemático </a> 
-            </div>
-
-            <div> 
-                <a href="/pages/conjuntos.html"> Teoría de Conjuntos </a>
-            </div>
-
-            <div> 
-                <a href="/pages/campo-numeros-reales.html"> Axiomas de campo y números reales </a>
-            </div>
-
-            <div> 
-                <a href="/pages/orden-inecuaciones.html"> Axiomas de orden e Inecuaciones </a>
-            </div>
-
-            <div> 
-                <a href="/pages/funciones-trigonometricas-algebraicas.html"> Funciones Trigonometricas y Algebráicas </a>
-            </div>
+            <div><a href="../index.html">Inicio</a></div>
+            <div><a href="razonamiento.html">Razonamiento</a></div>
+            <div><a href="conjuntos.html">Conjuntos</a></div>
+            <div><a href="campo-numeros-reales.html">Reales</a></div>
+            <div><a href="orden-inecuaciones.html">Inecuaciones</a></div>
+            <div><a href="funciones-trigonometricas-algebraicas.html">Funciones</a></div>
         </div>
     </nav>
 
     <article>
-        <span>
-            <h2> Objetivos </h2>
-        </span>
+        <h2>Clasificación de Números</h2>
+        <div class="contenedor-tema">
+            <div class="columna-tema">
+                <h3>Jerarquía</h3>
+                <p>El conjunto de los Reales ($\mathbb{R}$) contiene a todos:</p>
+                <ul>
+                    <li>$\mathbb{N}$: Naturales (1, 2, 3...)</li>
+                    <li>$\mathbb{Z}$: Enteros (..., -1, 0, 1...)</li>
+                    <li>$\mathbb{Q}$: Racionales (fracciones a/b)</li>
+                    <li>$\mathbb{I}$: Irracionales ($\pi, \sqrt{2}$)</li>
+                </ul>
+                <img src="../images/diagrama_reales.jpg" alt="
+
+[Image of real numbers set hierarchy diagram]
+" class="imagen-tema">
+            </div>
+            
+            <div class="columna-tema">
+                <h3>Axiomas Clave</h3>
+                <p>Reglas que damos por hecho pero debemos probar formalmente:</p>
+                <ul>
+                    <li><b>Conmutativa:</b> $a + b = b + a$</li>
+                    <li><b>Asociativa:</b> $(a+b)+c = a+(b+c)$</li>
+                    <li><b>Distributiva:</b> $a(b+c) = ab + ac$</li>
+                    <li><b>Inverso Aditivo:</b> $a + (-a) = 0$</li>
+                </ul>
+                <div class="nota-pro">
+                    <b>Ojo en Exámenes:</b> Nunca asumas que $a/b$ existe si no has probado que $b \neq 0$.
+                </div>
+            </div>
+        </div>
     </article>
-    
-    <footer> 
-        <div class="derechos-autor"> © Derechos reservados por Angel David Huerta de Jesús de la Facultad de Ciencias de la Computación | Fundamentos de las Matemáticas </div>
-    </footer>
+
+    <footer><div class="derechos-autor">© 2025 Angel David | FCC BUAP</div></footer>
 </body>
 </html>

@@ -4,67 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css"> 
-    <link rel="script" href="../script.js">
-    <link rel="icon" type="images/x-icon" href="../images/FIBONACCI.jpg">
-    <title> Fundamentos de las Matemáticas </title>
+    <script src="../script.js" defer></script>
+    <title>Razonamiento Matemático</title>
 </head>
 <body>
     <header>
-        <div class="contenedor-logo"> 
-            <img class="logo" src="../images/FCC.png">
-        </div>
-        <h1> Razonamiento Matemático </h1>
+        <div class="contenedor-logo"><img class="logo" src="../images/FCC.png"></div>
+        <h1>Lógica y Razonamiento</h1>
     </header>
     
     <nav class="menu"> 
         <div class="contenedor">
-            <div>
-                <a href="/index.html"> Inicio </a>
-            </div>
-            <div> 
-                <a href="/pages/razonamiento.html"> Razonamiento Matemático </a> 
-            </div>
-
-            <div> 
-                <a href="/pages/conjuntos.html"> Teoría de Conjuntos </a>
-            </div>
-
-            <div> 
-                <a href="/pages/campo-numeros-reales.html"> Axiomas de campo y números reales </a>
-            </div>
-
-            <div> 
-                <a href="/pages/orden-inecuaciones.html"> Axiomas de orden e Inecuaciones </a>
-            </div>
-
-            <div> 
-                <a href="/pages/funciones-trigonometricas-algebraicas.html"> Funciones Trigonometricas y Algebráicas </a>
-            </div>
+            <div><a href="../index.html">Inicio</a></div>
+            <div><a href="razonamiento.html">Razonamiento</a></div>
+            <div><a href="conjuntos.html">Conjuntos</a></div>
+            <div><a href="campo-numeros-reales.html">Reales</a></div>
+            <div><a href="orden-inecuaciones.html">Inecuaciones</a></div>
+            <div><a href="funciones-trigonometricas-algebraicas.html">Funciones</a></div>
         </div>
     </nav>
 
-    <article class="parte1">
-        <span class="lado-izquierdo">
-            <h2> Conjunción </h2>
-        </span>
+    <article>
+        <h2>Conectivos Lógicos</h2>
+        <p>La base de la programación y los circuitos digitales.</p>
 
-        <ul>
-            <li> Idea: </li>
-        </ul>
-        <p> <b> Sean <em> p </em> y <em> q </em> dos proposiciones, la conjunción va a estar representada por: </b> </p>
-        <p> <em> p </em>  ∧  <em> q </em> </p>
-        <p> (en la simbología matemática) </p>
-        <p> La conjunción en el razonamiento matemático es una herramienta <br> fundamental que permite combinar proposiciones para formar nuevas proposiciones.<br> Se considera verdadera solo si ambas proposiciones son verdaderas. </p>
+        <div class="contenedor-tema">
+            <div class="columna-tema">
+                <h3>1. Conjunción (AND)</h3>
+                <span class="simbolo-matematico">p ∧ q</span>
+                <p>Solo es Verdadera si <b>ambas</b> son verdaderas.</p>
+                <img src="../images/tabla_conjuncion.jpg" alt="
 
-        <span class="lado-derecho">
-            <h2> Disyunción </h2>
-        </span>
+[Image of truth table for conjunction]
+" class="imagen-tema"> 
+                <div class="nota-pro"><b>Tip C++:</b> Es el operador <code>&&</code>.</div>
+            </div>
 
+            <div class="columna-tema">
+                <h3>2. Disyunción (OR)</h3>
+                <span class="simbolo-matematico">p ∨ q</span>
+                <p>Es Verdadera si <b>al menos una</b> es verdadera.</p>
+                <img src="../images/tabla_disyuncion.jpg" alt="
+
+[Image of truth table for disjunction]
+" class="imagen-tema">
+                <div class="nota-pro"><b>Tip C++:</b> Es el operador <code>||</code>.</div>
+            </div>
+        </div>
+        
+        <div class="contenedor-tema">
+            <div class="columna-tema">
+                <h3>3. Condicional (Implica)</h3>
+                <span class="simbolo-matematico">p → q</span>
+                <p>Falso solo si <b>V → F</b>.</p>
+                <p>"Si apruebo (V), me compras un coche (F)". ¡Mentira! (F).</p>
+            </div>
+        </div>
+
+        <div class="zona-interactiva">
+            <h3>⚡ Laboratorio de Verdad (Demo) ⚡</h3>
+            <p>Prueba los operadores asumiendo p=Verdadero y q=Falso:</p>
+            <button class="btn-interactivo" onclick="evaluarLogica('AND')">Probar AND</button>
+            <button class="btn-interactivo" onclick="evaluarLogica('OR')">Probar OR</button>
+            <button class="btn-interactivo" onclick="evaluarLogica('IMP')">Probar →</button>
+            <div id="resultado-logico" class="resultado">esperando input...</div>
+        </div>
 
     </article>
     
-    <footer> 
-        <div class="derechos-autor"> © Derechos reservados por Angel David Huerta de Jesús de la Facultad de Ciencias de la Computación | Fundamentos de las Matemáticas </div>
-    </footer>
+    <footer><div class="derechos-autor">© 2025 Angel David | FCC BUAP</div></footer>
 </body>
 </html>
