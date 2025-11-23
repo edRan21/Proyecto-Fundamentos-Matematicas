@@ -129,10 +129,10 @@ footer{
     }
     .prof {
         width: 15%;
-        max-height: 15%;
+        height: 15%;
     }
     .mate {
-        top: 50%;
+        top: 100%;
         font-size: 70%;
     }
     footer {
