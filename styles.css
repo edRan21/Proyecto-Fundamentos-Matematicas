@@ -45,6 +45,13 @@ display: block;
     border-style: ridge;
 }
 
+footer{
+    background-color: #564f4e;
+    border: 2px solid #564f4e;
+    border-radius: 10px; 
+    padding: 15px;
+}
+
 .derechos-autor{
     text-align:center;
     font-size: 20px;
