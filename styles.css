@@ -124,6 +124,9 @@ footer{
         right: 0%;
         top:0%
     }
+    .trigonometricas {
+        font: 2rem;
+    }
     .portada {
         font-size: 1rem;
     }
@@ -132,7 +135,7 @@ footer{
         height: 30%;
     }
     .mate {
-        top: -60%;
+        top: -100%;
         font-size: 80%;
         right: -2.5%;
     }
