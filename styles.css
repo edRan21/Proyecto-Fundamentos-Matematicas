@@ -128,7 +128,7 @@ footer{
         font-size: 1rem;
     }
     .prof {
-        width: 20%;
+        max-width: 20%;
         max-height: 20%;
     }
     .mate {
