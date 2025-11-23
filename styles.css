@@ -132,8 +132,8 @@ footer{
         max-height: 25%;
     }
     .mate {
-        top: -150%;
-        right: -200%;
+        top: -200%;
+        right: -100%;
         font-size: 200%;
     }
     footer {
