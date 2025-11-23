@@ -77,6 +77,15 @@ span {
     top: 100px;
 }
 
+.parte3 {
+    background-color: #635552;
+    border: 2px solid #635552;
+    border-radius: 10px;
+    padding: 10px;  
+    position: relative;
+    top: 150px;
+}
+
 .portada {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -107,12 +116,30 @@ span {
     color: white;
 }
 
+li {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+/* Razonamiento */
+
+.lado-izquierdo {
+    position: relative;
+    left: -20%;
+}
+
+.lado-derecho {
+    position: relative;
+    right: -20%;
+    top: -65px;
+}
+
 footer{
     background-color: #564f4e;
     border: 2px solid #564f4e;
     border-radius: 10px; 
     padding: 15px;
-    margin-top: 100%;
+    margin-top: 50%;
 
 }
 
@@ -163,6 +190,9 @@ footer{
         right: -2.5%;
     }
     .introduccion {
+        font-size: 1rem;
+    }
+    li{
         font-size: 1rem;
     }
     footer {
