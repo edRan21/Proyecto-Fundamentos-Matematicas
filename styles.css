@@ -124,13 +124,14 @@ footer{
         top:0%
     }
     .portada {
-        font-size: 15%;
+        font-size: 1rem;
     }
     .prof {
-        max-width: 10%;
+        width: 10%;
+        height: 10%;
     }
     .mate {
-        font-size: 15%;
+        font-size: 1rem;
     }
     footer {
         padding-left: 5%;
