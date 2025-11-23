@@ -133,8 +133,8 @@ footer{
     }
     .mate {
         top: 0%;
-        right: -10%;
-        font-size: 100%;
+        right: -200%;
+        font-size: 1rem;
     }
     footer {
         padding-left: 5%;
