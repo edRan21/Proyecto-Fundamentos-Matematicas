@@ -66,6 +66,25 @@ article {
     padding: 10px;;
 }
 
+.portada {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.prof {
+    border: 2px solid #333;
+    border-radius: 50%; /* Convierte en círculo si el ancho y alto son iguales */
+    width: 100px;
+    height: 100px;
+}
+
+.mate {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -40px;
+}
+
 footer{
     background-color: #564f4e;
     border: 2px solid #564f4e;
@@ -103,6 +122,15 @@ footer{
     h2 {
         right: 0%;
         top:0%
+    }
+    .portada {
+        font-size: 15%;
+    }
+    .prof {
+        max-width: 10%;
+    }
+    .mate {
+        font-size: 15%;
     }
     footer {
         padding-left: 5%;
