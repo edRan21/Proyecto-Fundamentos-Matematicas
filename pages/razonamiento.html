@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css"> 
     <script src="../script.js" defer></script>
+    <script>
+    window.MathJax = {
+        tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']] /* Esto permite usar el signo de pesos */
+        }
+    };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <link rel="icon" type="images/x-icon" href="../images/FIBONACCI.jpg">
     <title>Razonamiento Matemático</title>
 </head>
 <body>
@@ -69,7 +78,7 @@
             <button class="btn-interactivo" onclick="evaluarLogica('IMP')">Probar →</button>
             <div id="resultado-logico" class="resultado">esperando input...</div>
         </div>
-
+        <div class="zona-interactiva"></div>
     </article>
     
     <footer><div class="derechos-autor">© 2025 Angel David | FCC BUAP</div></footer>

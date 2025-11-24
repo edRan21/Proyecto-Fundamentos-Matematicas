@@ -4,55 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css"> 
-    <link rel="script" href="../script.js">
-    <link rel="icon" type="images/x-icon" href="../images/FIBONACCI.jpg">
-    <title> Fundamentos de las Matemáticas </title>
+    
+    <script>
+    window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script src="../script.js" defer></script>
+    <title>Teoría de Conjuntos</title>
 </head>
 <body>
     <header>
-        <div class="contenedor-logo"> 
-            <img class="logo" src="../images/FCC.png">
-        </div>
-        <h1> Conjuntos </h1>
+        <div class="contenedor-logo"><img class="logo" src="../images/FCC.png"></div>
+        <h1>Teoría de Conjuntos</h1>
     </header>
     
     <nav class="menu"> 
         <div class="contenedor">
-            <div>
-                <a href="/index.html"> Inicio </a>
-            </div>
-            <div> 
-                <a href="/pages/razonamiento.html"> Razonamiento Matemático </a> 
-            </div>
-
-            <div> 
-                <a href="/pages/conjuntos.html"> Teoría de Conjuntos </a>
-            </div>
-
-            <div> 
-                <a href="/pages/campo-numeros-reales.html"> Axiomas de campo y números reales </a>
-            </div>
-
-            <div> 
-                <a href="/pages/orden-inecuaciones.html"> Axiomas de orden e Inecuaciones </a>
-            </div>
-
-            <div> 
-                <a href="/pages/funciones-trigonometricas-algebraicas.html"> Funciones Trigonometricas y Algebráicas </a>
-            </div>
+            <div><a href="../index.html">Inicio</a></div>
+            <div><a href="razonamiento.html">Razonamiento</a></div>
+            <div><a href="conjuntos.html">Conjuntos</a></div>
+            <div><a href="campo-numeros-reales.html">Reales</a></div>
+            <div><a href="orden-inecuaciones.html">Inecuaciones</a></div>
+            <div><a href="funciones-trigonometricas-algebraicas.html">Funciones</a></div>
         </div>
     </nav>
 
     <article>
-        <span>
-            <h2> Teoría de Conjuntos </h2>
-        </span>
+        <h2>Operaciones Fundamentales</h2>
+        <p>Los conjuntos son la base de las bases de datos y la lógica de programación.</p>
 
-        <p>  </p>
+        <div class="contenedor-tema">
+            <div class="columna-tema">
+                <h3>Unión ($\cup$)</h3>
+                <p class="simbolo-matematico">A $\cup$ B</p>
+                <p>Agrupa los elementos de ambos conjuntos. "Todo lo que está en A <b>O</b> en B".</p>
+                <p>Definición: $x \in (A \cup B) \iff x \in A \lor x \in B$</p>
+
+
+[Image of Venn diagram showing union of two sets]
+
+            </div>
+
+            <div class="columna-tema">
+                <h3>Intersección ($\cap$)</h3>
+                <p class="simbolo-matematico">A $\cap$ B</p>
+                <p>Solo los elementos comunes. "Lo que está en A <b>Y</b> en B".</p>
+                <p>Definición: $x \in (A \cap B) \iff x \in A \land x \in B$</p>
+                
+
+[Image of Venn diagram showing intersection of two sets]
+
+            </div>
+        </div>
+
+        <div class="contenedor-tema">
+            <div class="columna-tema">
+                <h3>Diferencia ($-$)</h3>
+                <p class="simbolo-matematico">A - B</p>
+                <p>Elementos que están en A pero <b>se les quita</b> lo que tengan de B.</p>
+                <p><b>¡Ojo!</b> $A - B \neq B - A$</p>
+            </div>
+
+            <div class="columna-tema">
+                <h3>Complemento ($A^c$ o $A'$)</h3>
+                <p>Lo que le falta a A para ser igual al Universo ($U$).</p>
+                <p class="simbolo-matematico">A^c = U - A</p>
+            </div>
+        </div>
+
+        <div class="zona-interactiva">
+            </div>
+
+    </article>
+
+    <article class="zona-apuntes">
+        <h3>📝 Apuntes de Clase</h3>
+        <p>Nota: El conjunto vacío $\emptyset$ es subconjunto de cualquier conjunto.</p>
     </article>
     
-    <footer> 
-        <div class="derechos-autor"> © Derechos reservados por Angel David Huerta de Jesús de la Facultad de Ciencias de la Computación | Fundamentos de las Matemáticas </div>
-    </footer>
+    <footer><div class="derechos-autor">© 2025 Angel David | FCC BUAP</div></footer>
 </body>
 </html>

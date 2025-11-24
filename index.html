@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> 
     <link rel="icon" type="image/x-icon" href="images/Mathematics Mascot Logo.jpg">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script>
+    window.MathJax = {
+        tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']] /* Esto permite usar el signo de pesos */
+        }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="icon" type="images/x-icon" href="/images/Mathematics Mascot Logo.jpg">
     <title>Fundamentos de las Matemáticas - Inicio</title>
 </head>
 <body>
@@ -12,7 +22,7 @@
         <div class="contenedor-logo"> 
             <img class="logo" src="images/FCC.png" alt="Logo FCC">
         </div>
-        <h1>Formulario "Survival Guide" Matemáticas</h1>
+        <h1>Formulario de Fundamentos de las Matemáticas</h1>
     </header>
     
     <nav class="menu"> 
@@ -26,27 +36,46 @@
     </nav>
 
     <article>
-        <h2>Datos del Curso</h2>
+        <h2>Ficha Técnica del Curso</h2>
+        
         <div class="contenedor-tema">
-            <div class="columna-tema" style="text-align: center;">
-                <img class="prof" src="images/f1.jpg" style="width:150px; border-radius:50%; border:3px solid rgb(205, 89, 89);" alt="Foto Docente">
-                <h3>Docente: Mauricio Torres Gonzales</h3>
-                <p><a href="mailto:mauricio.torresgonzales@correo.buap.mx" style="color: #ffd700;">Enviar Correo</a></p>
-            </div>
             <div class="columna-tema">
-                <h3>Detalles del Alumno</h3>
-                <p><b>Alumno:</b> Angel David Huerta de Jesús</p>
-                <p><b>Carrera:</b> Ciencias de la Computación (FCC)</p>
-                <p><b>Semestre:</b> 1ro - Otoño 2025</p>
-                <div class="nota-pro">
-                    "Este sitio recopila todos los trucos y conceptos que me hubieran salvado la vida al inicio del semestre."
-                </div>
+                <h3>Datos del Alumno</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><b>Alumno:</b> Angel David Huerta de Jesús</li>
+                    <li><b>Carrera:</b> Facultad de Ciencias de la Computación</li>
+                    <li><b>Semestre:</b> Primero - Otoño 2025</li>
+                    <li><b>Sección:</b> 007</li>
+                    <li><b>Código:</b> [Tu código aquí]</li>
+                    <li><b>Correo:</b> <a href="mailto:hj202539889@alm.buap.mx" style="color: #ffd700;">hj202539889@alm.buap.mx</a></li>
+                </ul>
             </div>
+
+            <div class="columna-tema" style="text-align: center;">
+                <h3>Datos del Docente</h3>
+                <img class="prof" src="images/f1.jpg" style="width:120px; border-radius:50%; border:3px solid rgb(205, 89, 89); margin-bottom: 10px;">
+                <p><b>Profesor:</b> Mauricio Torres Gonzales</p>
+                <p><a href="mailto:mauricio.torresgonzales@correo.buap.mx" style="color: #ffd700;">mauricio.torresgonzales@correo.buap.mx</a></p>
+            </div>
+        </div>
+
+        <div class="nota-pro">
+            <h3>Objetivo del Formulario</h3>
+            <p>Esta página web fue elaborada con el propósito de integrar en un solo espacio (como un cofre o un manual en tu inventario) un formulario para la materia de Fundamentos de Matemáticas. Su meta es facilitar la consulta rápida de trucos, enseñanzas y conceptos vistos en clase, sirviendo como una guía de estudio y "Survival Guide" para el futuro.</p>
         </div>
     </article>
 
+    <article>
+        <h2>Bibliografía y Recursos</h2>
+        <ul style="list-style-type: circle; padding-left: 20px;">
+            <li>Libro: "Álgebra y Trigonometría" - Stewart.</li>
+            <li>Apuntes de clase - Prof. Mauricio Torres.</li>
+            <li>Documentación de MDN Web Docs (para el código).</li>
+            </ul>
+    </article>
+
     <footer> 
-        <div class="derechos-autor">© 2025 Angel David Huerta de Jesús | FCC BUAP</div>
+        <div class="derechos-autor">© Derechos reservados por Angel David Huerta de Jesús, estudiante de la FCC | Fundamentos de las Matemáticas 2025</div>
     </footer>
 </body>
 </html>

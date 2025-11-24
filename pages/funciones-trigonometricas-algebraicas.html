@@ -4,53 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css"> 
-    <link rel="script" href="../script.js">
-    <link rel="icon" type="images/x-icon" href="../images/FIBONACCI.jpg">
-    <title> Fundamentos de las Matemáticas </title>
+    
+    <script>
+    window.MathJax = {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script src="../script.js" defer></script>
+    <title>Funciones y Trigonometría</title>
 </head>
 <body>
     <header>
-        <div class="contenedor-logo"> 
-            <img class="logo" src="../images/FCC.png">
-        </div>
-        <h1 class="trigonometricas"> Funciones trigonometricas y algebraicas </h1>
+        <div class="contenedor-logo"><img class="logo" src="../images/FCC.png"></div>
+        <h1>Funciones</h1>
     </header>
     
     <nav class="menu"> 
         <div class="contenedor">
-            <div>
-                <a href="/index.html"> Inicio </a>
-            </div>
-            <div> 
-                <a href="/pages/razonamiento.html"> Razonamiento Matemático </a> 
-            </div>
-
-            <div> 
-                <a href="/pages/conjuntos.html"> Teoría de Conjuntos </a>
-            </div>
-
-            <div> 
-                <a href="/pages/campo-numeros-reales.html"> Axiomas de campo y números reales </a>
-            </div>
-
-            <div> 
-                <a href="/pages/orden-inecuaciones.html"> Axiomas de orden e Inecuaciones </a>
-            </div>
-
-            <div> 
-                <a href="/pages/funciones-trigonometricas-algebraicas.html"> Funciones Trigonometricas y Algebráicas </a>
-            </div>
+            <div><a href="../index.html">Inicio</a></div>
+            <div><a href="razonamiento.html">Razonamiento</a></div>
+            <div><a href="conjuntos.html">Conjuntos</a></div>
+            <div><a href="campo-numeros-reales.html">Reales</a></div>
+            <div><a href="orden-inecuaciones.html">Inecuaciones</a></div>
+            <div><a href="funciones-trigonometricas-algebraicas.html">Funciones</a></div>
         </div>
     </nav>
 
     <article>
-        <span>
-            <h2> Objetivos </h2>
-        </span>
+        <h2>Conceptos Básicos</h2>
+        <div class="contenedor-tema">
+            <div class="columna-tema">
+                <h3>Definición</h3>
+                <p>Una función $f$ asigna a cada $x \in D$ un único $y \in R$.</p>
+                <p>Dominio ($D_f$): Valores válidos para entrar.</p>
+                <p>Rango ($R_f$): Valores que pueden salir.</p>
+                
+
+[Image of Cartesian coordinate system with axis labels]
+
+            </div>
+            <div class="columna-tema">
+                <h3>Identidades Trigonométricas</h3>
+                <p>$\sin^2 \theta + \cos^2 \theta = 1$</p>
+                <p>$\tan \theta = \frac{\sin \theta}{\cos \theta}$</p>
+                
+
+[Image of cotangent function graph]
+
+            </div>
+        </div>
+
+        <div class="zona-interactiva">
+            </div>
     </article>
-    
-    <footer> 
-        <div class="derechos-autor"> © Derechos reservados por Angel David Huerta de Jesús de la Facultad de Ciencias de la Computación | Fundamentos de las Matemáticas </div>
-    </footer>
+
+    <article class="zona-apuntes">
+        <h3>📝 Notas Personales</h3>
+        <p>SohCahToa: Seno=Op/Hip, Coseno=Ady/Hip, Tangente=Op/Ady.</p>
+    </article>
+
+    <footer><div class="derechos-autor">© 2025 Angel David | FCC BUAP</div></footer>
 </body>
 </html>
