@@ -194,7 +194,7 @@ footer {
 
     /* Elementos que no son responsive mobile*/
     .correo-prof {
-        text-align: left;
+        font-size: 100%;
     }
 }
 
