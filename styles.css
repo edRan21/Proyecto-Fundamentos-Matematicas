@@ -191,6 +191,11 @@ footer {
     .contenedor { flex-direction: column; }
     .contenedor div a { text-align: center; }
     article { width: 95%; margin: 10px auto; }
+
+    /* Elementos que no son responsive mobile*/
+    .correo-prof {
+        text-align: left;
+    }
 }
 
 /* Agrega esto al final de styles.css */
