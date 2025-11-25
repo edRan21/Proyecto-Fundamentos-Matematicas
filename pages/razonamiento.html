@@ -42,15 +42,23 @@
                 <h3>1. Conjunción (AND)</h3>
                 <span class="simbolo-matematico">p ∧ q</span>
                 <p>Solo es Verdadera si <b>ambas</b> son verdaderas.</p>
-                <img src="../images/tabla_conjuncion.jpg" alt="[Image of truth table for conjunction]" class="imagen-tema"> 
+                <img src="../images/conjuncion.jpg" alt="[Imagen de la tabla de verdad para la conjunción]" class="imagen-tema"> 
                 <div class="nota-pro"><b> Signo en C++:</b> Es el operador <code>&&</code>.</div>
+                <h3>Idea principal</h3>
+                <p>Su solución será otra proposión cuyo valor verdadero será solo si el resultado de <b>p</b> y <b>q</b> SON VERDADEROS, su valor será falso SI <b>p</b> ó <b>q</b> ó <b>p</b> y <b>q</b> su valor es falso</p>
+                <h3>Ejemplos de conjunción</h3>
+                <ol>
+                    <li>Si P es <b>"El cielo está despejado"</b> y Q es <b>"Hace sol"</b>, la conjunción P∧Q sería <b>"El cielo está despejado y hace sol"</b>. Esta proposición es verdadera solo si ambas condiciones se cumplen.</li>
+                    <li>En un contexto matemático, si P es <b>"El número es par"</b> y Q es <b>"El número es mayor que 2"</b>, la conjunción P∧Q es verdadera solo si el número es par y mayor que 2.</li>
+                </ol>
+                <p></p>
             </div>
 
             <div class="columna-tema">
-                <h3>2. Disyunción (OR)</h3>
+                <h3>2. Disyunción (OR)</h3> 
                 <span class="simbolo-matematico">p ∨ q</span>
                 <p>Es Verdadera si <b>al menos una</b> es verdadera.</p>
-                <img src="../images/tabla_disyuncion.jpg" alt="[Image of truth table for disjunction]" class="imagen-tema">
+                <img src="../images/disyuncion.jpg" alt="Imagen de la tabla de verdad para diyunción" class="imagen-tema">
                 <div class="nota-pro"><b>Signo en C++:</b> Es el operador <code>||</code>.</div>
             </div>
         </div>
@@ -61,18 +69,18 @@
                 <span class="simbolo-matematico">p → q</span>
                 <p>Falso solo si <b>V → F</b>.</p>
                 <p>"Si apruebo (V), me compras un coche (F)". ¡Mentira! (F).</p>
+                <img src="../images/condicional.jpg" alt="Imagen de la tabla de verdad para condicional" class="imagen-tema">
             </div>
         </div>
 
         <div class="zona-interactiva">
-            <h3>⚡ Laboratorio de Verdad (Demo) ⚡</h3>
+            <h3>⚡ Laboratorio de Verdad ⚡</h3>
             <p>Prueba los operadores asumiendo p=Verdadero y q=Falso:</p>
             <button class="btn-interactivo" onclick="evaluarLogica('AND')">Probar AND</button>
             <button class="btn-interactivo" onclick="evaluarLogica('OR')">Probar OR</button>
             <button class="btn-interactivo" onclick="evaluarLogica('IMP')">Probar →</button>
             <div id="resultado-logico" class="resultado">esperando input...</div>
         </div>
-        <div class="zona-interactiva"></div>
     </article>
     
     <footer><div class="derechos-autor">© 2025 Angel David | FCC BUAP</div></footer>
