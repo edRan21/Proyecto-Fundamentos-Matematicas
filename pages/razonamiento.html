@@ -48,8 +48,8 @@
                 <p>Su solución será otra proposión cuyo valor<p style="color: red; display: inline-block; margin: 0 10px;">verdadero</p>será solo si el resultado de <b>p</b> y <b>q</b> son<p style="color: red; display: inline-block; margin: 0 10px;">verdaderos</p>, su valor será<p style="color: red; display: inline-block; margin: 0 10px;">falso</p>SI <b>p</b> ó <b>q</b>, ó <b>p</b> y <b>q</b> su valor es<p style="color: red; display: inline-block; margin: 0 10px;">falso</p>.</p>
                 <h3>Ejemplos de conjunción</h3>
                 <ol>
-                    <li>Si P es <b>"El cielo está despejado"</b> y Q es <b>"Hace sol"</b>, la conjunción P∧Q sería <b>"El cielo está despejado y hace sol"</b>. Esta proposición es verdadera solo si ambas condiciones se cumplen.</li>
-                    <li>En un contexto matemático, si P es <b>"El número es par"</b> y Q es <b>"El número es mayor que 2"</b>, la conjunción P∧Q es verdadera solo si el número es par y mayor que 2.</li>
+                    <li>Si <i>P</i> es <b>"El cielo está despejado"</b> y <i>Q</i> es <b>"Hace sol"</b>, la conjunción <b>P</b>∧<b>Q</b> sería <b>"El cielo está despejado y hace sol"</b>. Esta proposición es verdadera solo si ambas condiciones se cumplen.</li>
+                    <li>En un contexto matemático, si <i>P</i> es <b>"El número es par"</b> y <i>Q</i> es <b>"El número es mayor que 2"</b>, la conjunción <b>P</b>∧<b>Q</b> es verdadera solo si el número es par y mayor que 2.</li>
                 </ol>
                 <p></p>
             </div>
@@ -64,6 +64,11 @@
                 <p style="display: inline-block; margin: 0 10px;">Su respuesta es un valor<p style="color: red; display: inline-block; margin: 0 10px;">verdadero</p>cuando<b> p</b> ó <b>q</b>, ó <b>p</b> y <b>q</b> su valor es<p style="color: red; display: inline-block; margin: 0 10px;">verdadero.</p>.</p>
                 <h3>Definición</h3>
                 <p>La disyución es un concepto fudamental en lógia que se utiliza para combinar dos o más proposiciones. Es<p style="color: red; display: inline-block; margin: 0 10px;">verdadera</p> si al menos una de las proposiones es<p style="color: red; display: inline-block; margin: 0 10px;">verdadera</p>, se lee como <b>P</b> o <b>Q</b>. Es<p style="color: red; display: inline-block; margin: 0 10px;">falsa</p>solo cuando ambas<b> P</b> y <b>Q </b>son<p style="color: red; display: inline-block; margin: 0 10px;">falsas</p>.</p>
+                <h3>Ejemplos de Disyunción</h3>
+                <ul>
+                    <li><b>Ejemplo 1:</b> Si <i>p</i> es <b>"El número dos es par"</b> y <i>q</i> es <b>"La suma de 2 + 2 es 4"</b>, entonces <b>p</b>v<b>q</b> es <b>"El número 2 es par <i>o</i> la suma de 2 + 2 es 4"</b>. Esta proposición es verdadera si el número 2 es par o la suma de 2 + 2 es 4</li>
+                    <li><b>Ejemplo 2:</b> Si <i>p</i> es <b>"El foco verde está encendido"</b> y <i>q</i> es "El <b>foco rojo está encendido"</b>. Esta proposición es verdadera si uno de los focos está encendido</li>
+                </Ul>
             </div>
         </div>
         
@@ -74,6 +79,12 @@
                 <p>Falso solo si <b>V → F</b>.</p>
                 <p>"Si apruebo (V), me compras un coche (F)". ¡Mentira! (F).</p>
                 <img src="../images/condicional.jpg" alt="Imagen de la tabla de verdad para condicional" class="imagen-tema">
+                <h3>Definición</h3>
+                <p>La condición en el razonamiento matemático se refiere a la hipótesis o premisa que se utiliza para establecer una relación lógica entre dos proposiciones. En el razonamiento matemático si la hipótesis es verdadera, entonces la conclusión también es verdadera</p>
+                <h3>Por ejemplo:</h3>
+                <p><i>"Si llueve, entonces el suelo estará mojado"</i>, la condición es <i>"llueve"</i> y la condición es <i>"el suelo estará mojado"</i>.</p>
+                <p>Este tipo de de razonamiento es fundamental en matemáticas y lógica, ya que permite deducir conclusiones válidas bajo ciertas premisas.</p>
+                
             </div>
         </div>
 
@@ -84,6 +95,19 @@
             <button class="btn-interactivo" onclick="evaluarLogica('OR')">Probar OR</button>
             <button class="btn-interactivo" onclick="evaluarLogica('IMP')">Probar →</button>
             <div id="resultado-logico" class="resultado">esperando input...</div>
+        </div>
+    </article>
+    <article>
+        <div class="contenedor-tema">
+            <div class="columna-tema">
+                <h2>Demás compuertas lógicas complementarias</h2>
+                <h3>4. Negación de Conjunción</h3>
+                <img src="../images/compuerta-logica-nand-de-2-entradas.jpg" alt="Imagen del tabla de verdad de negación de conjunción" class="imagen-tema">
+                <h3>5. Negación Disyunción</h3>
+                <img src="../images/compuerta-logica-nor-2-de-entradas.jpg" alt="Imagen de tabla de verdad de negación de disyunción" class="imagen-tema">
+                <h3>Proposiciones Equivalentes</h3>
+                <p>Decimos que dos proposiciones son equivalentes <i>p</i>↔<i>q</i>, cuando <i>p</i>→<i>q</i> y <i>q</i>→<i>p</i>. Es decir que <i>p</i>→<i>q</i> es <b>verdadero</b> cuando (<i>p</i>→<i>q</i>) ∧ (<i>q</i>→<i>p</i>) es <b>verdadero</b>.</p>
+            </div>
         </div>
     </article>
     
